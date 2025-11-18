@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>contact us</title>
+    <style>
+        /* laptop */
+        @media (min-width:769px) and (max-width:1440px) {
+
+            /* headersection */
+            .header-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                font-weight: bold;
+                border: 2px solid whitesmoke;
+                background-color: whitesmoke;
+            }
+             .header{
+                position:sticky;
+                top:0px;
+                z-index: 1000;
+                background-color: white;
+            }
+            .left,
+            .right {
+                color: gray;
+            }
+
+            .left i {
+                color: orangered;
+                margin-right: 8px;
+                font-weight: normal;
+            }
+
+            .right i {
+                color: white;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: grey;
+                border-radius: 50%;
+                padding: 10px 10px 10px 10px;
+            }
+
+            .right i:hover {
+                background-color: orangered;
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 0;
+                font-weight: bold;
+            }
+
+            .move {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            ul li a:hover {
+                color: orange;
+            }
+
+            .schedule {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                padding: 10px 25px;
+                background-color: black;
+                color: orangered;
+                border: none;
+                height:60px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            #calender {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: orangered;
+                color: white;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-left: -25px;
+                font-size: 18px;
+            }
+
+            /* bannersection */
+            .banner {
+                background-image: url('../Assets/page-heading-bg.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                position: relative;
+            }
+
+            /* mainsection */
+
+            .main {
+                margin-left: 200px;
+            }
+
+            .form-control {
+                border-radius: 25px;
+                background-color: whitesmoke;
+                border: none;
+                padding: 12px 20px;
+                padding-left: 30px;
+                padding-right: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 420px;
+
+            }
+
+            .form-label {
+                padding-top: 40px;
+                padding-left: 30px;
+            }
+
+            .Forms {
+
+                height: 650px;
+                width: 500px;
+                border-radius: 5px;
+                margin-left: 600px;
+                margin-top: -640px;
+                background-color: white;
+                border: 2px solid whitesmoke;
+                box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, 0.12);
+
+            }
+
+            .sm {
+                background: black;
+                color: aliceblue;
+                border-radius: 100px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-top: 40px;
+                margin-left: 30px;
+                width: 35%;
+                
+            }
+
+            .icon {
+                margin-top: 200px;
+
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 100%;
+                padding: 9px;
+            }
+
+        }
+
+        /* tab */
+        @media (min-width:426px) and (max-width:768px) {
+
+            /* headersection */
+            .header-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                font-weight: bold;
+                border: 2px solid whitesmoke;
+                background-color: whitesmoke;
+            }
+
+            .left,
+            .right {
+                color: gray;
+            }
+
+            .left i {
+                color: orangered;
+                margin-right: 8px;
+                font-weight: normal;
+            }
+
+            .right i {
+                color: white;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: grey;
+                border-radius: 50%;
+                padding: 10px 10px 10px 10px;
+            }
+
+            .right i:hover {
+                background-color: orangered;
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 0;
+                font-weight: bold;
+            }
+
+            .move {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            ul li a:hover {
+                color: orange;
+            }
+
+            .schedule {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                padding: 10px 25px;
+                background-color: black;
+                color: orangered;
+                border: none;
+                border-radius: 50px;
+                font-size: 16px;
+                height:60px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            #calender {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: orangered;
+                color: white;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                margin-left: -25px;
+                font-size: 18px;
+            }
+
+            /* bannersection */
+            .banner {
+                background-image: url('../Assets/page-heading-bg.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                position: relative;
+            }
+
+            /* mainsection */
+            .main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                padding: 0 20px;
+            }
+
+            .icon {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                gap: 20px;
+                margin-top: 150px;
+                flex-wrap: wrap;
+            }
+
+            .Forms {
+                margin-left: 0;
+                width: 90%;
+                margin-top: 80px;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 100%;
+                padding: 9px;
+            }
+
+            .sm {
+                background: black;
+                color: aliceblue;
+                border-radius: 100px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-top: 40px;
+                margin-left: 30px;
+                width: 65%;
+            }
+        }
+
+        /* phone */
+        @media (max-width:425px) {
+
+            /* headesection */
+            .header-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                font-weight: bold;
+                border: 2px solid whitesmoke;
+                background-color: whitesmoke;
+            }
+
+            .left,
+            .right {
+                /* color: gray; */
+                display: none;
+            }
+
+            .left i {
+                color: orangered;
+                margin-right: 8px;
+                font-weight: normal;
+            }
+
+            .right i {
+                color: white;
+                margin-left: 10px;
+                cursor: pointer;
+                background-color: grey;
+                border-radius: 50%;
+                padding: 10px 10px 10px 10px;
+                display: grid;
+                grid-template-rows: (1, 4fr);
+            }
+
+            .right i:hover {
+                background-color: orangered;
+            }
+
+            ul {
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 0;
+                font-weight: bold;
+            }
+
+            .move {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: black;
+            }
+
+            ul li a:hover {
+                color: orange;
+            }
+
+            .schedule {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                padding: 10px 25px;
+                background-color: black;
+                color: orangered;
+                border: none;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            #calender {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: orangered;
+                color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-left: -15px;
+                font-size: 18px;
+            }
+
+            /* bannersection */
+            .banner {
+                display: none;
+            }
+
+            /* mainsection */
+            .main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                padding: 0 10px;
+                width: 45%;
+                margin-left: 150px;
+
+            }
+
+            .icon {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+                margin-top: 200px;
+            }
+
+            .Forms {
+                margin-left: 0;
+                width: 95%;
+                margin-top: 50px;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                width: 100%;
+                padding: 9px;
+            }
+
+            .sm {
+                background: black;
+                color: aliceblue;
+                border-radius: 100px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-top: 40px;
+                margin-left: 30px;
+                width: 65%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- headersection -->
+    <section class=" header container-fluid">
+        <section class="header-section">
+            <div class="left">
+                <i class="fa-solid fa-envelope"></i> mail |
+                <i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160
+            </div>
+            <div class="right">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+        </section>
+        <section class="move bg-body-tertiary">
+            <h1>VILLA</h1>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="properties.html">Propeties</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="propertydetails.html">property Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <button class="schedule">
+                                            <i class="fa-solid fa-calendar" id="calender"></i>
+                                            Schedule a Visit
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+    </section>
+    <!-- banner section -->
+
+    <section class="container-fluid">
+        <section class="banner">
+            <div class="banner-content">
+                <h4 style="border:2px solid white ; color: black; padding: 5px 5px 5px 5px; background-color: white;">
+                    HOME/CONTACT US</h4>
+                <h1>CONTACT US</h1>
+            </div>
+        </section>
+    </section>
+
+    <!-- mainsection -->
+    <section class="container-fluid">
+        <section class="main">
+            <div>
+                <div style="color: orangered; padding-top: 90px;">| CONTACT US</div>
+                <h1 style="color:black; margin-top:35px;">Get In Touch<br> <span>With Our Agents</span></h1>
+            </div>
+            <div style="height:100px ; width:500px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos beatae distinctio commodi. Aspernatur
+                voluptatem dolore, assumenda modi explicabo dolorem labore magni accusamus? Dolores, ex provident quasi
+                odio cumque tenetur obcaecati.
+                Alias, magni nihil sit voluptatem repudiandae veritatis harum animi veniam, error soluta aspernatur
+                tempore et eveniet eius natus eum nisi cumque? Maiores autem perspiciatis nemo totam in voluptatum,
+                assumenda nihil?
+                Impedit ducimus repudiandae adipisci et eos illo, vitae nulla cum exercitationem enim molestias
+                expedita, eius iure quis, nemo at harum laudantium qui possimus facilis. Quod debitis ratione
+                dignissimos? Iusto, itaque.
+            </div>
+            <div>
+                <div class="icon d-flex"
+                    style="box-shadow: 4px 4px 10px 5px; width:250px; padding-left:10px;padding-top:10px; border-radius:10px; justify-content: center;">
+                    <div>
+                        <img src="../assets/phone-icon.png" alt="phone icon">
+                    </div>
+                    <div>
+                        <p style="padding-left: 20px;"><b>010-020-0340</b> <br>phone Number</p>
+                    </div>
+                </div>
+                <div class="icon d-flex"
+                    style="box-shadow: 4px 4px 10px 5px; width:250px; padding-left:10px;padding-top:10px; border-radius:10px; margin-top:40px; justify-content: center;">
+                    <div>
+                        <img src="../Assets/email-icon.png" alt="email icon">
+                    </div>
+                    <div>
+                        <p style="padding-left: 20px;"><b>info @ villa.co</b> <br>Business Email</p>
+                    </div>
+                </div>
+
+                <div class="Forms">
+                    <div class="fm">
+                        <label for="name" class="form-label" style="color: gray;">FullName</label>
+                        <input type="text" class=" form-control" id="fname" placeholder="Your Name...">
+                    </div>
+                    <div class="fm">
+                        <label for="email" class="form-label" style="color: gray;">Email Address</label>
+                        <input type="email" class=" form-control" id="email" placeholder="Your E-mail...">
+                    </div>
+                    <div class="fm">
+                        <label for="Subject" class="form-label" name="Subject"
+                            style="color: rgb(50, 49, 49);">Subject</label>
+                        <input type="Subject" class=" form-control" id="Subject" placeholder="Subject...">
+                    </div>
+                    <div class="fm">
+                        <label for="Message" class="form-label" name="Message"
+                            style="color: rgb(86, 82, 82);">Message</label>
+                        <textarea type="Message" class=" form-control" id="Message"
+                            placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                        <button class="sm">Send
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- map section -->
+
+    <section class="container-fluid">
+        <div style="margin-top:100px;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15202.612711664615!2d83.30517175313038!3d17.713836641916423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a39436f113dca6d%3A0xd76a1de2271dff26!2sRamakrishna%20Beach!5e0!3m2!1sen!2sin!4v1762957910399!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="container-fluid">
+        <footer>
+            <div>
+                Copyright &copy; Copyright Villa Agency Co., Ltd, All rights reserved. Design: XYZ
+            </div>
+        </footer>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
